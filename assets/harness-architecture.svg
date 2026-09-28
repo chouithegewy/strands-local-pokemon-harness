@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">A small local model inside a smart Pokémon agent harness</title>
+  <desc id="desc">The emulator sends game state to deterministic observation and action filters. A local Qwen 1.7B model selects one candidate. Validation and bounded execution send a safe action back to the emulator.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1826"/>
+      <stop offset="1" stop-color="#162b43"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#02060b" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8ca5bd"/>
+    </marker>
+    <style>
+      .title { font: 700 38px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #f5f8fb; }
+      .subtitle { font: 400 19px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #adbed0; }
+      .box-title { font: 700 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #f5f8fb; }
+      .label { font: 600 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #e9f0f6; }
+      .small { font: 400 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #b9c8d7; }
+      .tiny { font: 600 13px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0.08em; fill: #7ce0c0; }
+      .arrow { fill: none; stroke: #8ca5bd; stroke-width: 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#background)"/>
+  <circle cx="1110" cy="70" r="160" fill="#ff9900" opacity="0.045"/>
+  <circle cx="90" cy="620" r="190" fill="#7c5cff" opacity="0.055"/>
+
+  <text x="60" y="67" class="title">A small model inside a smart harness</text>
+  <text x="60" y="101" class="subtitle">Deterministic code makes the world legible, bounded, and recoverable.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="175" width="250" height="330" rx="24" fill="#122236" stroke="#31506d" stroke-width="2"/>
+    <rect x="85" y="212" width="200" height="152" rx="16" fill="#9bbc0f" stroke="#c7dd61" stroke-width="3"/>
+    <rect x="108" y="235" width="154" height="106" rx="5" fill="#26380c"/>
+    <path d="M125 310 h42 v-23 h36 v23 h40" fill="none" stroke="#9bbc0f" stroke-width="8" stroke-linecap="square"/>
+    <circle cx="139" cy="397" r="19" fill="#ff9900"/>
+    <circle cx="183" cy="397" r="19" fill="#ffcf72"/>
+    <rect x="223" y="387" width="42" height="18" rx="9" fill="#456785"/>
+    <text x="185" y="454" text-anchor="middle" class="box-title">Emulator</text>
+    <text x="185" y="481" text-anchor="middle" class="small">PyBoy + owned ROM</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="370" y="145" width="460" height="410" rx="28" fill="#15283d" stroke="#ff9900" stroke-width="3"/>
+    <text x="600" y="184" text-anchor="middle" class="tiny">STRANDS AGENT HARNESS</text>
+
+    <rect x="405" y="215" width="180" height="72" rx="14" fill="#1d3850" stroke="#477390"/>
+    <text x="495" y="246" text-anchor="middle" class="label">Observe</text>
+    <text x="495" y="270" text-anchor="middle" class="small">compact telemetry</text>
+
+    <rect x="615" y="215" width="180" height="72" rx="14" fill="#1d3850" stroke="#477390"/>
+    <text x="705" y="246" text-anchor="middle" class="label">Constrain</text>
+    <text x="705" y="270" text-anchor="middle" class="small">prune bad actions</text>
+
+    <rect x="405" y="322" width="180" height="72" rx="14" fill="#1d3850" stroke="#477390"/>
+    <text x="495" y="353" text-anchor="middle" class="label">Validate</text>
+    <text x="495" y="377" text-anchor="middle" class="small">schema + legal IDs</text>
+
+    <rect x="615" y="322" width="180" height="72" rx="14" fill="#1d3850" stroke="#477390"/>
+    <text x="705" y="353" text-anchor="middle" class="label">Execute</text>
+    <text x="705" y="377" text-anchor="middle" class="small">bounded controls</text>
+
+    <rect x="405" y="429" width="390" height="82" rx="14" fill="#102131" stroke="#397864"/>
+    <text x="600" y="462" text-anchor="middle" class="label">Remember and recover</text>
+    <text x="600" y="488" text-anchor="middle" class="small">short history · traces · checkpoints · budgets</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="890" y="210" width="250" height="260" rx="24" fill="#241f48" stroke="#8f7cff" stroke-width="2"/>
+    <circle cx="1015" cy="284" r="48" fill="#7c5cff" opacity="0.9"/>
+    <path d="M986 284 h58 M1015 255 v58 M995 264 l40 40 M1035 264 l-40 40" stroke="#f1edff" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <text x="1015" y="368" text-anchor="middle" class="box-title">Qwen3 1.7B</text>
+    <text x="1015" y="398" text-anchor="middle" class="small">Q4_K_M · CPU only</text>
+    <text x="1015" y="429" text-anchor="middle" class="small">chooses one candidate</text>
+  </g>
+
+  <path d="M310 275 C335 275 343 250 370 250" class="arrow"/>
+  <text x="340" y="224" text-anchor="middle" class="small">state</text>
+
+  <path d="M830 268 C852 268 862 300 890 300" class="arrow"/>
+  <text x="859" y="246" text-anchor="middle" class="small">candidates</text>
+
+  <path d="M890 382 C855 382 854 359 830 359" class="arrow"/>
+  <text x="862" y="414" text-anchor="middle" class="small">one action</text>
+
+  <path d="M370 366 C345 366 342 414 310 414" class="arrow"/>
+  <text x="340" y="451" text-anchor="middle" class="small">buttons</text>
+
+  <line x1="585" y1="251" x2="615" y2="251" class="arrow"/>
+  <path d="M705 287 V304 C705 313 686 322 667 322" class="arrow"/>
+  <line x1="585" y1="358" x2="615" y2="358" class="arrow"/>
+  <line x1="705" y1="394" x2="705" y2="429" class="arrow"/>
+
+  <rect x="60" y="590" width="18" height="18" rx="4" fill="#ff9900"/>
+  <text x="90" y="605" class="small">deterministic boundary</text>
+  <rect x="290" y="590" width="18" height="18" rx="4" fill="#7c5cff"/>
+  <text x="320" y="605" class="small">probabilistic decision</text>
+  <text x="1140" y="605" text-anchor="end" class="small">No model writes game memory</text>
+</svg>
