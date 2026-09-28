@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# User-supplied model and game data
+*.gguf
+*.gb
+*.gbc
+*.gba
+*.sav
+*.state
+
+# Generated telemetry, captures, and ROM-derived navigation data
+demo/runs/
+demo/game_assets/
+
+# Editor and OS files
+.DS_Store
+*.swp

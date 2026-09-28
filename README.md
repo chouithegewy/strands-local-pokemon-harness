@@ -26,6 +26,29 @@ The result was more interesting than a simple win. The model first lost a tiny b
 
 > This is an independent engineering experiment. I used my own game ROM and do not distribute one. The real-game harness has not completed Pokémon Red.
 
+## Run the implementation
+
+The complete implementation is in [`demo/`](demo/README.md). It includes the
+simplified simulator, the Strands planner, both the unfiltered and pruned
+evaluation policies, the deterministic baseline, and the bounded PyBoy adapter.
+The original simulator traces used for the table below are preserved in
+[`results/`](results/README.md).
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r demo/requirements.txt
+
+# Reproduce the deterministic baseline without a model.
+.venv/bin/python demo/harness.py --provider rules
+
+# With llama-server listening on 127.0.0.1:18081:
+.venv/bin/python demo/harness.py --provider local --policy unfiltered
+.venv/bin/python demo/harness.py --provider local --policy pruned
+```
+
+The repository intentionally excludes ROMs, model weights, save states,
+ROM-derived navigation maps, and real-game video captures.
+
 ## What I built
 
 The prototype has two related environments:

@@ -1,0 +1,2744 @@
+{
+  "status": "won",
+  "provider": "rules",
+  "model": "pokemon-local",
+  "turns": 11,
+  "calls": 0,
+  "tokens": 0,
+  "seconds": 0,
+  "records": [
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 0,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 1,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 0,
+            "hp_after": 55
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 1,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 0,
+            "hp_after": 55
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 2,
+        "stage": 1,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Oddish",
+          "type": "grass",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Absorb",
+              "grass",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Geodude dealt 9 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Defeated Geodude!",
+          "Next opponent: Oddish."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 8,
+            "incoming_damage": 18,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 60
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 46
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 2,
+        "stage": 1,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Oddish",
+          "type": "grass",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Absorb",
+              "grass",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Geodude dealt 9 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Defeated Geodude!",
+          "Next opponent: Oddish."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 8,
+            "incoming_damage": 18,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 60
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 46
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 3,
+        "stage": 1,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 60,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Oddish",
+          "type": "grass",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Absorb",
+              "grass",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Defeated Geodude!",
+          "Next opponent: Oddish.",
+          "Switched to Charmander.",
+          "Oddish dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 56
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 56
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 3,
+        "stage": 1,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 60,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Oddish",
+          "type": "grass",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Absorb",
+              "grass",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Defeated Geodude!",
+          "Next opponent: Oddish.",
+          "Switched to Charmander.",
+          "Oddish dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 56
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 56
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 4,
+        "stage": 1,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Oddish",
+          "type": "grass",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Absorb",
+              "grass",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Defeated Geodude!",
+          "Next opponent: Oddish.",
+          "Switched to Charmander.",
+          "Oddish dealt 4 damage.",
+          "Charmander used Ember: 32 damage.",
+          "Oddish dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 32,
+            "incoming_damage": 0,
+            "hp_after": 56
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 52
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 4,
+        "stage": 1,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Oddish",
+          "type": "grass",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Absorb",
+              "grass",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Defeated Geodude!",
+          "Next opponent: Oddish.",
+          "Switched to Charmander.",
+          "Oddish dealt 4 damage.",
+          "Charmander used Ember: 32 damage.",
+          "Oddish dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 32,
+            "incoming_damage": 0,
+            "hp_after": 56
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 52
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 5,
+        "stage": 2,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Growlithe",
+          "type": "fire",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Ember",
+              "fire",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Oddish dealt 4 damage.",
+          "Charmander used Ember: 32 damage.",
+          "Oddish dealt 4 damage.",
+          "Charmander used Ember: 32 damage.",
+          "Defeated Oddish!",
+          "Next opponent: Growlithe."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 47
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 47
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 51
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 5,
+        "stage": 2,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Growlithe",
+          "type": "fire",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Ember",
+              "fire",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Oddish dealt 4 damage.",
+          "Charmander used Ember: 32 damage.",
+          "Oddish dealt 4 damage.",
+          "Charmander used Ember: 32 damage.",
+          "Defeated Oddish!",
+          "Next opponent: Growlithe."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 47
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 47
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 51
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 6,
+        "stage": 2,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 51,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Growlithe",
+          "type": "fire",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Ember",
+              "fire",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Oddish dealt 4 damage.",
+          "Charmander used Ember: 32 damage.",
+          "Defeated Oddish!",
+          "Next opponent: Growlithe.",
+          "Switched to Squirtle.",
+          "Growlithe dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 47
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 47
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 47
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 6,
+        "stage": 2,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 51,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Growlithe",
+          "type": "fire",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Ember",
+              "fire",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Oddish dealt 4 damage.",
+          "Charmander used Ember: 32 damage.",
+          "Defeated Oddish!",
+          "Next opponent: Growlithe.",
+          "Switched to Squirtle.",
+          "Growlithe dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 47
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 47
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 47
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 7,
+        "stage": 2,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Growlithe",
+          "type": "fire",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Ember",
+              "fire",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Defeated Oddish!",
+          "Next opponent: Growlithe.",
+          "Switched to Squirtle.",
+          "Growlithe dealt 4 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Growlithe dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 0,
+            "hp_after": 47
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 43
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 47
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 7,
+        "stage": 2,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Growlithe",
+          "type": "fire",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Ember",
+              "fire",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Defeated Oddish!",
+          "Next opponent: Growlithe.",
+          "Switched to Squirtle.",
+          "Growlithe dealt 4 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Growlithe dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 0,
+            "hp_after": 47
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 43
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 47
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 8,
+        "stage": 3,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Poliwag",
+          "type": "water",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Water Gun",
+              "water",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Growlithe dealt 4 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Growlithe dealt 4 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Defeated Growlithe!",
+          "Next opponent: Poliwag."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 38
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 38
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 60
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 38
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 8,
+        "stage": 3,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Poliwag",
+          "type": "water",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Water Gun",
+              "water",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Growlithe dealt 4 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Growlithe dealt 4 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Defeated Growlithe!",
+          "Next opponent: Poliwag."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 38
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 38
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 60
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 38
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 9,
+        "stage": 3,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 60,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Poliwag",
+          "type": "water",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Water Gun",
+              "water",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Growlithe dealt 4 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Defeated Growlithe!",
+          "Next opponent: Poliwag.",
+          "Switched to Bulbasaur.",
+          "Poliwag dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 56
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 56
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 38
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 38
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 9,
+        "stage": 3,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 60,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Poliwag",
+          "type": "water",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Water Gun",
+              "water",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Growlithe dealt 4 damage.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Defeated Growlithe!",
+          "Next opponent: Poliwag.",
+          "Switched to Bulbasaur.",
+          "Poliwag dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 4,
+            "hp_after": 56
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 56
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 38
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 38
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 10,
+        "stage": 3,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Poliwag",
+          "type": "water",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Water Gun",
+              "water",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Defeated Growlithe!",
+          "Next opponent: Poliwag.",
+          "Switched to Bulbasaur.",
+          "Poliwag dealt 4 damage.",
+          "Bulbasaur used Vine Whip: 32 damage.",
+          "Poliwag dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 0,
+            "hp_after": 56
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 52
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 38
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 38
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 10,
+        "stage": 3,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Poliwag",
+          "type": "water",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Water Gun",
+              "water",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Defeated Growlithe!",
+          "Next opponent: Poliwag.",
+          "Switched to Bulbasaur.",
+          "Poliwag dealt 4 damage.",
+          "Bulbasaur used Vine Whip: 32 damage.",
+          "Poliwag dealt 4 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 0,
+            "hp_after": 56
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 4,
+            "hp_after": 52
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 38
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 12,
+            "incoming_damage": 18,
+            "hp_after": 38
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 60
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Deterministic baseline; no language model called.",
+        "source": "rules",
+        "seconds": 0,
+        "tokens": 0
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "won",
+        "turn": 11,
+        "stage": 4,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 47,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 56,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Poliwag",
+          "type": "water",
+          "hp": 0,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Water Gun",
+              "water",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Poliwag dealt 4 damage.",
+          "Bulbasaur used Vine Whip: 32 damage.",
+          "Poliwag dealt 4 damage.",
+          "Bulbasaur used Vine Whip: 32 damage.",
+          "Defeated Poliwag!"
+        ],
+        "legal_actions": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Small model. Smart harness.</title>
+<style>
+:root{color-scheme:dark;--bg:#101826;--card:#1b2738;--ink:#f3f6fa;--muted:#acbbce;--orange:#ffad42;--mint:#7ce0c0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px system-ui,sans-serif}main{max-width:1450px;margin:auto;padding:32px 40px}header{display:flex;justify-content:space-between;align-items:center;gap:24px}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.18em;color:var(--mint);text-transform:uppercase}h1{font-size:clamp(28px,4vw,48px);letter-spacing:-.045em;margin:12px 0}h2{font-size:22px;margin:0 0 14px}p{color:var(--muted);line-height:1.55}.tag{border:1px solid #42556d;border-radius:50px;padding:9px 15px;font-size:13px;white-space:nowrap}.layout{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;margin:24px 0}.card{background:var(--card);border:1px solid #314056;border-radius:18px;padding:24px}.arena{background:linear-gradient(160deg,#d2e9ba,#a3c6b2);color:#192d2c;min-height:275px;position:relative;border-radius:12px;display:flex;align-items:center;justify-content:space-around;gap:12px;padding:24px}.monster{text-align:center;width:42%}.orb{display:grid;place-items:center;border:6px solid #ffffff50;width:98px;height:98px;border-radius:30% 50% 40% 45%;margin:14px auto;font-size:39px;box-shadow:0 14px 0 -6px #0002}.water{background:#69bada}.fire{background:#f8a175}.grass{background:#7cbe73}.rock{background:#b6a18a}.normal{background:#aaa}.name{font-size:22px;font-weight:800}.hp{height:9px;background:#0002;border-radius:20px;margin:10px 0 6px;overflow:hidden}.hp span{height:100%;background:#267a57;display:block;transition:width .4s}.tiny{font-size:12px;color:var(--muted)}.arena .tiny{color:#344d42}.vs{font-size:14px;font-weight:800;opacity:.5}.team{display:flex;gap:10px;margin:16px 0}.member{flex:1;background:#101826;border:1px solid #35445a;border-radius:10px;padding:12px;font-size:13px}.member.active{border-color:var(--orange)}.stats{display:flex;gap:30px;margin:20px 0}.stat b{display:block;font-size:28px;color:var(--mint)}.stat span{font-size:12px;color:var(--muted)}button{font:inherit;font-weight:700;border:0;border-radius:10px;padding:12px 18px;cursor:pointer;background:var(--orange);color:#162031}button.secondary{background:#34455d;color:white}button:disabled{opacity:.5;cursor:wait}.controls{display:flex;gap:10px;flex-wrap:wrap}.trace{height:320px;overflow:auto;scrollbar-width:thin}.decision{border-left:2px solid var(--mint);padding:0 0 0 13px;margin:0 0 20px}.decision p{margin:6px 0;font-size:14px}.decision b{color:var(--orange)}.flow{display:flex;gap:8px;align-items:center;margin:18px 0;flex-wrap:wrap;font-size:12px}.flow span{background:#28394e;padding:8px;border-radius:7px}.reward{display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px}.reward h2{font-size:27px;margin:7px 0}.reward img{width:142px;border-radius:4px}.steps{display:flex;gap:25px;flex-wrap:wrap}.steps strong{color:var(--orange)}a{color:var(--mint)}#error{color:#ffb9b0;white-space:pre-wrap;overflow-wrap:anywhere}#events{font-size:13px;min-height:40px}#rom{image-rendering:pixelated;max-height:370px;width:100%;object-fit:contain}details{margin-top:18px;color:var(--muted);font-size:12px}.disclosure{font-size:12px;margin-top:22px;color:var(--muted)}@media(max-width:850px){main{padding:20px}.layout{grid-template-columns:1fr}header{display:block}.tag{display:inline-block}.reward{grid-template-columns:1fr}.reward img{width:180px}.stats{gap:18px}.trace{height:240px}}
+</style>
+<main>
+<header><div><div class="eyebrow">Strands Agents · local inference</div><h1>Small model. Smart harness.</h1></div><span class="tag" id="provider">Connecting…</span></header>
+<p>Can a 1.7-billion-parameter model win a battle challenge? Give it useful state, bounded actions, and a way to check progress.</p>
+<div class="layout">
+ <section class="card"><div class="eyebrow" id="mode">Battle arena</div><h2 id="battle">Four battles. One small model.</h2>
+ <div class="arena" id="arena"></div><img id="rom" alt="Live Game Boy screen" hidden>
+ <div id="team" class="team"></div><p id="events"></p>
+ <div class="controls"><button id="run">Run demo</button><button id="step" class="secondary">One decision</button><button id="reset" class="secondary">Reset</button></div>
+ <p class="tiny" id="status" role="status" aria-live="polite">Loading…</p><p id="error" role="alert"></p>
+ </section>
+ <section class="card"><div class="eyebrow">Observe → decide → act → measure</div><h2>Inside the harness</h2>
+ <div class="flow"><span>Game state</span>→<span>Strands SDK</span>→<span>Local Qwen3</span>→<span>Validated action</span></div>
+ <div class="stats"><div class="stat"><b id="calls">0</b><span>model calls</span></div><div class="stat"><b id="tokens">0</b><span>total tokens</span></div><div class="stat"><b id="seconds">0s</b><span>decision time</span></div></div>
+ <div class="trace" id="trace"><p>The model’s selected actions and short explanations will appear here.</p></div>
+ <details><summary>What is being demonstrated?</summary><p>The arena is an original, simplified Pokémon battle simulator. Damage is deterministic; the harness supplies matchups and action forecasts. The model chooses actions. A win here does not prove it can complete a Pokémon game. The separate PyBoy adapter requires your own ROM and matching symbols. No AWS account is needed for local inference.</p></details>
+ </section>
+</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);let running=false,pending=false,last=null;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function mon(m){return `<div class="monster"><div class="tiny">${esc(m.type.toUpperCase())}</div><div class="orb ${esc(m.type)}">${esc(m.name[0])}</div><div class="name">${esc(m.name)}</div><div class="hp"><span style="width:${100*m.hp/m.max_hp}%"></span></div><div class="tiny">${m.hp} / ${m.max_hp} HP</div></div>`}
+function render(s){last=s;const g=s.game; $('provider').textContent=s.provider==='local'?`${s.model} · local · ${s.policy}`:s.provider==='rules'?'Rules baseline · no LLM':`${s.model} · Amazon Bedrock · ${s.policy}`;$('mode').textContent=g.label;
+if(g.kind==='arena'){$('battle').textContent=g.status==='won'?'Challenge complete!':`Battle ${Math.min(g.stage+1,g.total_stages)} of ${g.total_stages} · Turn ${g.turn}`;$('arena').innerHTML=mon(g.team[g.active])+'<div class="vs">VS</div>'+mon(g.opponent);$('team').innerHTML=g.team.map((m,i)=>`<div class="member ${i===g.active?'active':''}"><b>${esc(m.name)}</b><div class="hp"><span style="width:${100*m.hp/m.max_hp}%"></span></div>${m.hp} HP</div>`).join('');}
+else{$('arena').hidden=true;$('arena').style.display='none';$('rom').hidden=false;$('rom').src='/api/screen?t='+g.turn;$('battle').textContent=`ROM experiment · ${g.turn} actions`;$('events').textContent=JSON.stringify(g.telemetry);}
+if(g.kind==='arena')$('events').textContent=g.events.slice(-2).join(' ');$('calls').textContent=s.calls;$('tokens').textContent=s.tokens;$('seconds').textContent=s.seconds+'s';$('error').textContent=s.error||'';
+if(s.error||g.status!=='playing')running=false;
+$('run').textContent=running?'Pause':'Run demo';$('run').disabled=g.status!=='playing';$('step').disabled=s.busy||g.status!=='playing'||running;$('reset').disabled=s.busy;
+$('status').textContent=s.busy?'Model is choosing an action…':g.status==='won'?'The agent won all four simulated battles.':g.status==='playing'?'Ready. Local mode uses the model on this laptop.':g.status;
+if(s.log.length)$('trace').innerHTML=s.log.slice().reverse().map(d=>`<div class="decision"><b>${esc(d.action)}</b><p>${esc(d.reason)}</p><div class="tiny">${esc(d.source)} · ${d.seconds}s · ${d.tokens} tokens</div></div>`).join('');else $('trace').innerHTML='<p>The model’s selected actions and short explanations will appear here.</p>';
+}
+async function post(path){const r=await fetch(path,{method:'POST'});if(!r.ok)throw new Error((await r.json()).error||r.statusText)}
+async function poll(){try{const r=await fetch('/api/state');if(!r.ok)throw new Error('Dashboard unavailable');render(await r.json());if(running&&!last.busy&&!pending){pending=true;await post('/api/step');setTimeout(()=>pending=false,800);}}catch(e){running=false;$('error').textContent=e.message}setTimeout(poll,600)}
+$('run').onclick=()=>{running=!running;$('run').textContent=running?'Pause':'Run demo'};
+$('step').onclick=async()=>{try{$('step').disabled=true;await post('/api/step')}catch(e){$('error').textContent=e.message}};
+$('reset').onclick=async()=>{running=false;try{await post('/api/reset')}catch(e){$('error').textContent=e.message}};poll();
+</script>
+</html>

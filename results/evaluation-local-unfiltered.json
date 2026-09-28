@@ -1,0 +1,6482 @@
+{
+  "status": "lost",
+  "provider": "local",
+  "model": "pokemon-local",
+  "turns": 27,
+  "calls": 27,
+  "tokens": 14108,
+  "seconds": 194.284,
+  "records": [
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 0,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Switch to Bulbasaur to maximize damage potential, as its Vine Whip deals 16 damage and is more effective against Geodude's rock type.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 11.553,
+        "tokens": 487
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 1,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 1,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "Switch to Charmander as his damage (16) is significantly lower than Squirtle's (32), reducing risk of knockout and preserving HP.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.187,
+        "tokens": 519
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 2,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 2,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 2,
+        "events": [
+          "Win four battles. The harness calculates type matchups; the model chooses actions.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "heal",
+        "reason": "I need to heal before fainting. My current HP is 55, and I have 2 potions left. Healing will help me stay in the battle.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.234,
+        "tokens": 528
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 3,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 1,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Healed Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 3,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 64,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 1,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Healed Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 55
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:0",
+        "reason": "Switch to Squirtle to maximize damage potential, as it has the highest damage output (32 damage) and is the best fit for the current opponent.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.518,
+        "tokens": 537
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 4,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 1,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Healed Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 4,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 1,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Healed Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Switch to Bulbasaur to utilize its Vine Whip for higher damage and better matchup against Geodude's Rock Throw.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.878,
+        "tokens": 539
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 5,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 1,
+        "events": [
+          "Healed Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 5,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 1,
+        "events": [
+          "Healed Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "heal",
+            "label": "Potion (+35 HP)",
+            "hp_after": 55
+          }
+        ]
+      },
+      "decision": {
+        "action": "heal",
+        "reason": "I need to heal before fainting. My current HP is 46, and I have 1 potion left. Healing will restore my HP and allow me to continue fighting.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 8.239,
+        "tokens": 551
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 6,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Healed Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 6,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Healed Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:0",
+        "reason": "Switch to Squirtle to utilize its high damage potential and ensure we can deal significant damage to the opponent.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 6.697,
+        "tokens": 517
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 7,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Healed Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 7,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Healed Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 46
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Switch to Bulbasaur to utilize its Vine Whip for higher damage, as it has a better next damage potential compared to Charmander.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.632,
+        "tokens": 523
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 8,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Healed Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 8,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 55,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Healed Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 46
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "The new teammate, Charmander, has a higher best_next_damage (16) compared to Squirtle (32), so switching to Charmander reduces the risk of a knockout.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 8.167,
+        "tokens": 536
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 9,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 9,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:0",
+        "reason": "Switch to Squirtle to maximize damage potential, as its Water Gun deals 16 damage and its Tackle deals 12, which is more effective than Bulbasaur's Vine Whip (16) and Charmander's Ember (16).",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 8.336,
+        "tokens": 549
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 10,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 37
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 10,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 37
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 37
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Switch to Bulbasaur to increase damage potential and reduce reliance on Water Gun, which is less effective against Rock type.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 6.761,
+        "tokens": 521
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 11,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 37
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 11,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 46,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 37
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "The new teammate, Charmander, has a lower best_next_damage (16) compared to the current teammate (32), so switching to Charmander is more efficient for minimizing damage and preserving HP.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.834,
+        "tokens": 542
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 12,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 12,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "The new teammate, Bulbasaur, has the same damage potential as the previous switch, but I will avoid repeated switches to maintain consistency and prevent fatigue.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.14,
+        "tokens": 530
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 13,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 28
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 13,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 28
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 28
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:0",
+        "reason": "Switch to Squirtle to maximize damage potential, as it has the highest damage output (32) and is the best fit for the current opponent (Geodude).",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.594,
+        "tokens": 537
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 14,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 28
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 14,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 28
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Switch to Bulbasaur to maximize damage potential, as its Vine Whip deals 16 damage and has a higher base damage than Charmander's Ember.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.255,
+        "tokens": 533
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 15,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 28
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 15,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 37,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 28
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "Switch to Charmander as his damage (16) is less than Squirtle's (32), but still higher than Bulbasaur's (16). This prevents repeated switches and maintains optimal damage balance.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.899,
+        "tokens": 547
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 16,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 16,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Switch to Bulbasaur to maximize damage potential, as its Vine Whip deals 16 damage and has a higher base damage than Squirtle's Water Gun.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.269,
+        "tokens": 534
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 17,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 19
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 17,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 19
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 19
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:0",
+        "reason": "Switch to Squirtle to maximize damage potential, as it has the highest damage output (Vine Whip) and can deal 32 damage to the opponent.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.248,
+        "tokens": 533
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 18,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 19
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 18,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 19
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Switch to Bulbasaur to utilize its Vine Whip for higher damage, as it has a better next damage potential than Charmander.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 6.9,
+        "tokens": 527
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 19,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 19
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 19,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 1,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 28,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Vine Whip",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 19
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "Switch to Charmander as his damage (16) is less than the current teammate's damage (32), which is a significant reduction. This prevents repeated switches and maintains optimal team composition.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.585,
+        "tokens": 539
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 20,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 0
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 20,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:1",
+            "label": "Switch to Bulbasaur",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 0
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:1",
+        "reason": "Switch to Bulbasaur to reduce risk of knockout, as its damage is similar to Squirtle's but with a higher chance of causing a knockout.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 7.108,
+        "tokens": 530
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 21,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 10
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 21,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 10
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 10
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "Switch to Charmander to increase damage potential, as his fire type matches the opponent's rock type and his move 'Ember' has higher damage than the current moves.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 6.608,
+        "tokens": 503
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 22,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 22,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 19,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Switched to Bulbasaur.",
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 10
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:0",
+        "reason": "Switch to Squirtle to maximize damage potential, as it has the highest damage output (32) and can deal significant damage to the opponent's HP.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 5.439,
+        "tokens": 498
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 23,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 1
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 23,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 1
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 1
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "Switch to Charmander to maximize fire-type damage, as it has higher damage potential and can KO the opponent quickly.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 5.028,
+        "tokens": 489
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 24,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 1
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 24,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 2,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 10,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Ember",
+            "damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "move:1",
+            "label": "Scratch",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "switch:0",
+            "label": "Switch to Squirtle",
+            "best_next_damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 1
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:0",
+        "reason": "Switch to Squirtle to maximize damage potential, as it has higher damage output and better HP preservation.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 4.916,
+        "tokens": 485
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 25,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 0
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 25,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "switch:2",
+            "label": "Switch to Charmander",
+            "best_next_damage": 16,
+            "incoming_damage": 9,
+            "hp_after": 0
+          }
+        ]
+      },
+      "decision": {
+        "action": "switch:2",
+        "reason": "Switch to Charmander to maximize fire-type damage, as it has higher damage potential and better matchup against Geodude's rock type.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 5.207,
+        "tokens": 491
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 26,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 0
+          }
+        ]
+      }
+    },
+    {
+      "before": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "playing",
+        "turn": 26,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 1,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 55,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Switched to Squirtle.",
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle."
+        ],
+        "legal_actions": [
+          {
+            "id": "move:0",
+            "label": "Water Gun",
+            "damage": 32,
+            "incoming_damage": 9,
+            "hp_after": 0
+          },
+          {
+            "id": "move:1",
+            "label": "Tackle",
+            "damage": 12,
+            "incoming_damage": 9,
+            "hp_after": 0
+          }
+        ]
+      },
+      "decision": {
+        "action": "move:0",
+        "reason": "Use Water Gun to deal 32 damage to Geodude, which is the highest possible damage for this turn. This will likely result in a knockout, as Geodude's HP is 55 and it takes 9 damage to faint.",
+        "source": "Strands / local / pokemon-local",
+        "seconds": 6.052,
+        "tokens": 483
+      },
+      "after": {
+        "kind": "arena",
+        "label": "Simplified Pok\u00e9mon battle simulator \u00b7 no ROM",
+        "status": "lost",
+        "turn": 27,
+        "stage": 0,
+        "total_stages": 4,
+        "active": 0,
+        "team": [
+          {
+            "name": "Squirtle",
+            "type": "water",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Water Gun",
+                "water",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Bulbasaur",
+            "type": "grass",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Vine Whip",
+                "grass",
+                16
+              ],
+              [
+                "Tackle",
+                "normal",
+                12
+              ]
+            ]
+          },
+          {
+            "name": "Charmander",
+            "type": "fire",
+            "hp": 0,
+            "max_hp": 64,
+            "moves": [
+              [
+                "Ember",
+                "fire",
+                16
+              ],
+              [
+                "Scratch",
+                "normal",
+                12
+              ]
+            ]
+          }
+        ],
+        "opponent": {
+          "name": "Geodude",
+          "type": "rock",
+          "hp": 23,
+          "max_hp": 55,
+          "moves": [
+            [
+              "Rock Throw",
+              "rock",
+              9
+            ]
+          ]
+        },
+        "potions": 0,
+        "events": [
+          "Geodude dealt 9 damage.",
+          "Switched to Charmander.",
+          "Geodude dealt 9 damage.",
+          "Auto-selected surviving Squirtle.",
+          "Squirtle used Water Gun: 32 damage.",
+          "Geodude dealt 9 damage."
+        ],
+        "legal_actions": []
+      }
+    }
+  ]
+}
