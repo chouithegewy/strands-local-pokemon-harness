@@ -320,6 +320,7 @@ I will keep exploring the space, turning those unknowns into smaller, observable
 
 ## References
 
+- [Public repository for this article and its architecture assets](https://github.com/chouithegewy/strands-local-pokemon-harness)
 - [Build a Production AI Agent: Strands Agents Hands-On Workshop](https://github.com/aws-samples/sample-strands-agents-hands-on-workshop)
 - [Strands Agents SDK](https://strandsagents.com/)
 - [Using an OpenAI-compatible model with Strands](https://strandsagents.com/docs/user-guide/sdk/model-providers/openai/)
